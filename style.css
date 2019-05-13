@@ -1,0 +1,41 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.plus {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.minus {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.multiply {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.divide {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.square-root {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.powering {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
