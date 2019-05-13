@@ -9,39 +9,18 @@
   </head>
   <body>
     <div class="plus">
-      <p>Addition</p>
-      <form id="addition">
+      <p>Binary Operations</p>
+      <form id="operation">
         <input type="text" id="first" />
         <input type="text" id="second" />
+        <select name="operation-select">
+          <option value="addition">Addition</option>
+          <option value="substraction">Substraction</option>
+          <option value="multiply">Multiplication</option>
+          <option value="division">Division</option>
+        </select>
         <input type="submit" value="Calculate" />
-        <output name="sum-result"></output>
-      </form>
-    </div>
-    <div class="minus">
-      <p>Substraction</p>
-      <form id="substraction">
-        <input type="text" id="first" />
-        <input type="text" id="second" />
-        <input type="submit" value="Calculate" />
-        <output name="sub-result"></output>
-      </form>
-    </div>
-    <div class="multiply">
-      <p>Multiplication</p>
-      <form id="multiplication">
-        <input type="text" id="first" />
-        <input type="text" id="second" />
-        <input type="submit" value="Calculate" />
-        <output name="mul-result"></output>
-      </form>
-    </div>
-    <div class="divide">
-      <p>Division</p>
-      <form id="division">
-        <input type="text" id="first" />
-        <input type="text" id="second" />
-        <input type="submit" value="Calculate" />
-        <output name="divide-result"></output>
+        <output name="result"></output>
       </form>
     </div>
     <div class="square-root">

@@ -1,62 +1,35 @@
-// Addition
+// Binary operations
 
-const $formsum = document.getElementById("addition");
+const $form = document.getElementById("operation");
 
-function handleAddition(event) {
+function handleOperation(event) {
   event.preventDefault();
-  console.log(event);
+  console.log(event.target.elements["operation-select"].value);
+  const operation = event.target.elements["operation-select"].value;
   const $first = event.target.elements.first;
   const $second = event.target.elements.second;
-  const $output = event.target.elements["sum-result"];
-  $output.innerHTML = +$first.value + +$second.value;
+  const $output = event.target.elements["result"];
+
+  switch (operation) {
+    case "addition":
+      $output.innerHTML = +$first.value + +$second.value;
+      break;
+
+    case "substraction":
+      $output.innerHTML = +$first.value - +$second.value;
+      break;
+
+    case "multiply":
+      $output.innerHTML = +$first.value * +$second.value;
+      break;
+
+    case "division":
+      $output.innerHTML = +$first.value / +$second.value;
+      break;
+  }
 }
 
-$formsum.addEventListener("submit", handleAddition);
-
-// Substraction
-
-const $formminus = document.getElementById("substraction");
-
-function handleSubstraction(event) {
-  event.preventDefault();
-  console.log(event);
-  const $first = event.target.elements.first;
-  const $second = event.target.elements.second;
-  const $output = event.target.elements["sub-result"];
-  $output.innerHTML = +$first.value - +$second.value;
-}
-
-$formminus.addEventListener("submit", handleSubstraction);
-
-// Multiplication
-
-const $formmul = document.getElementById("multiplication");
-
-function handleMultiplication(event) {
-  event.preventDefault();
-  console.log(event);
-  const $first = event.target.elements.first;
-  const $second = event.target.elements.second;
-  const $output = event.target.elements["mul-result"];
-  $output.innerHTML = +$first.value * +$second.value;
-}
-
-$formmul.addEventListener("submit", handleMultiplication);
-
-// Division
-
-const $formdivide = document.getElementById("division");
-
-function handleDivision(event) {
-  event.preventDefault();
-  console.log(event);
-  const $first = event.target.elements.first;
-  const $second = event.target.elements.second;
-  const $output = event.target.elements["divide-result"];
-  $output.innerHTML = +$first.value / +$second.value;
-}
-
-$formdivide.addEventListener("submit", handleDivision);
+$form.addEventListener("submit", handleOperation);
 
 // Square root
 
