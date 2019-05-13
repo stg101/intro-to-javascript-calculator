@@ -66,3 +66,8 @@ select {
   flex-direction: column;
   grid-area: c;
 }
+
+img {
+  height: 20px;
+  width: 20px;
+}
