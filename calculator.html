@@ -4,138 +4,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
     <title>Calculator</title>
   </head>
   <body>
     <div class="plus">
+      <p>Addition</p>
       <form id="addition">
         <input type="text" id="first" />
         <input type="text" id="second" />
         <input type="submit" value="Calculate" />
         <output name="sum-result"></output>
       </form>
-      <script>
-        const $formsum = document.getElementById("addition");
-
-        function handleSubmit(event) {
-          event.preventDefault();
-          console.log(event);
-          const $first = event.target.elements.first;
-          const $second = event.target.elements.second;
-          const $output = event.target.elements["sum-result"];
-          $output.innerHTML = +$first.value + +$second.value;
-        }
-
-        $formsum.addEventListener("submit", handleSubmit);
-      </script>
     </div>
     <div class="minus">
+      <p>Substraction</p>
       <form id="substraction">
         <input type="text" id="first" />
         <input type="text" id="second" />
         <input type="submit" value="Calculate" />
         <output name="sub-result"></output>
       </form>
-      <script>
-        const $formminus = document.getElementById("substraction");
-
-        function handleSubmit(event) {
-          event.preventDefault();
-          console.log(event);
-          const $first = event.target.elements.first;
-          const $second = event.target.elements.second;
-          const $output = event.target.elements["sub-result"];
-          $output.innerHTML = +$first.value - +$second.value;
-        }
-
-        $formminus.addEventListener("submit", handleSubmit);
-      </script>
     </div>
     <div class="multiply">
+      <p>Multiplication</p>
       <form id="multiplication">
         <input type="text" id="first" />
         <input type="text" id="second" />
         <input type="submit" value="Calculate" />
         <output name="mul-result"></output>
       </form>
-      <script>
-        const $formmul = document.getElementById("multiplication");
-
-        function handleSubmit(event) {
-          event.preventDefault();
-          console.log(event);
-          const $first = event.target.elements.first;
-          const $second = event.target.elements.second;
-          const $output = event.target.elements["mul-result"];
-          $output.innerHTML = +$first.value * +$second.value;
-        }
-
-        $formmul.addEventListener("submit", handleSubmit);
-      </script>
     </div>
     <div class="divide">
+      <p>Division</p>
       <form id="division">
         <input type="text" id="first" />
         <input type="text" id="second" />
         <input type="submit" value="Calculate" />
         <output name="divide-result"></output>
       </form>
-      <script>
-        const $formdivide = document.getElementById("division");
-
-        function handleSubmit(event) {
-          event.preventDefault();
-          console.log(event);
-          const $first = event.target.elements.first;
-          const $second = event.target.elements.second;
-          const $output = event.target.elements["divide-result"];
-          $output.innerHTML = +$first.value / +$second.value;
-        }
-
-        $formdivide.addEventListener("submit", handleSubmit);
-      </script>
     </div>
     <div class="square-root">
+      <p>Square Root</p>
       <form id="sqr">
         <input type="text" id="first" />
         <input type="submit" value="Calculate" />
         <output name="sqr-result"></output>
       </form>
-      <script>
-        const $formsqr = document.getElementById("sqr");
-
-        function handleSubmit(event) {
-          event.preventDefault();
-          console.log(event);
-          const $first = event.target.elements.first;
-          const $output = event.target.elements["sqr-result"];
-          $output.innerHTML = Math.sqrt(+$first.value);
-        }
-
-        $formsqr.addEventListener("submit", handleSubmit);
-      </script>
     </div>
     <div class="powering">
+      <p>Power</p>
       <form id="power">
         <input type="text" id="first" />
         <input type="text" id="second" />
         <input type="submit" value="Calculate" />
         <output name="pow-result"></output>
       </form>
-      <script>
-        const $formpow = document.getElementById("power");
-
-        function handleSubmit(event) {
-          event.preventDefault();
-          console.log(event);
-          const $first = event.target.elements.first;
-          const $second = event.target.elements.second;
-          const $output = event.target.elements["pow-result"];
-          $output.innerHTML = (+$first.value) ** +$second.value;
-        }
-
-        $formpow.addEventListener("submit", handleSubmit);
-      </script>
     </div>
+
+    <script src="calculator.js"></script>
   </body>
 </html>
