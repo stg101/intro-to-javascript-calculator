@@ -8,40 +8,45 @@
     <title>Calculator</title>
   </head>
   <body>
+    <header>
+      <h1>Calculator.js</h1>
+    </header>
+
     <main>
-      <article>
-        <h1>Calculator.js</h1>
-        <section class="basic-operations operation-section">
-          <h2>Basic Operations</h2>
-          <form id="operation">
-            <input type="text" id="first" />
-            <input type="text" id="second" />
-            <select name="operation-select">
-              <option value="addition">Addition</option>
-              <option value="substraction">Substraction</option>
-              <option value="multiply">Multiplication</option>
-              <option value="division">Division</option>
-            </select>
-            <input type="submit" value="Calculate" class="submission" />
-            <output name="result"></output>
-          </form>
-        </section>
-        <section class="square-root operation-section">
-          <h2>Square Root</h2>
-          <form id="sqr">
-            <input type="text" id="first" />
-            <input type="submit" value="Calculate" class="submission" />
-            <output name="sqr-result"></output>
-          </form>
-        </section>
-        <section class="powering operation-section">
-          <h2>Power</h2>
-          <form id="power">
-            <input type="text" id="first" />
-            <input type="text" id="second" />
-            <input type="submit" value="Calculate" class="submission" />
-            <output name="pow-result"></output>
-          </form>
+      <article class="operations-article">
+        <section class="operations-container">
+          <article class="basic-operations operation-section">
+            <h2>Basic Operations</h2>
+            <form id="operation">
+              <input type="text" id="first" />
+              <input type="text" id="second" />
+              <select name="operation-select">
+                <option value="addition">Addition</option>
+                <option value="substraction">Substraction</option>
+                <option value="multiply">Multiplication</option>
+                <option value="division">Division</option>
+              </select>
+              <input type="submit" value="Calculate" class="submission" />
+              <output name="result"></output>
+            </form>
+          </article>
+          <article class="square-root operation-section">
+            <h2>Square Root</h2>
+            <form id="sqr">
+              <input type="text" id="first" />
+              <input type="submit" value="Calculate" class="submission" />
+              <output name="sqr-result"></output>
+            </form>
+          </article>
+          <article class="powering operation-section">
+            <h2>Power</h2>
+            <form id="power">
+              <input type="text" id="first" />
+              <input type="text" id="second" />
+              <input type="submit" value="Calculate" class="submission" />
+              <output name="pow-result"></output>
+            </form>
+          </article>
         </section>
       </article>
     </main>
