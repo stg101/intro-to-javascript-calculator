@@ -3,6 +3,7 @@
 }
 body {
   background-size: cover;
+  padding: 15px;
   height: 95vh;
   display: flex;
   flex-direction: column;
@@ -13,4 +14,8 @@ footer {
   height: 32px;
   display: flex;
   justify-content: end;
+}
+
+.operation-section {
+  margin: 40px 0;
 }
